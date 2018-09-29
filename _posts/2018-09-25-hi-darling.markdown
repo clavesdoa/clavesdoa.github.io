@@ -12,7 +12,7 @@ A friend recently shared a funny joke on Facebook and challenged me to solve it.
 
 ![My helpful screenshot](/assets/images/integral_pin.png)
 
-A caring person leaves her debit card to her partner and invites him to use it how he wishes. Only condtion, to find the PIN code he must solve a difficult integral. Can we help him to find the solution?
+A caring person leaves her debit card to her partner and invites him to use it how he wishes. Only condition, to find the PIN code he must solve a difficult integral. Can we help him to find the solution?
 
 First, let's factorise the numerator. I will start by dividing by $$x-1$$:
 
@@ -88,3 +88,40 @@ $$
 & =\displaystyle\int_{\sqrt{2}}^{-1}2\dfrac{(t+1)^2(3t^4-4t^3-2t^2+56t+60)}{(2t+3)^4}dt
 \end{array}
 $$
+
+We need another substitution:
+
+$$
+	\begin{array}{rl}
+	2t+3=u & \rightarrow t=\dfrac{u-3}{2} \rightarrow du=2dt \\
+	\sqrt{2} & \rightarrow 2\sqrt{2}+3 \\
+	-1 & \rightarrow 1
+	\end{array}
+$$
+
+Consequently:
+
+$$
+	\begin{array}{rl}
+	(t+1)^2 & \rightarrow \dfrac{u^2-2u+1}{4} \\
+	t^2 & \rightarrow \dfrac{u^2-6u+9}{4} \\
+	t^3 & \rightarrow \dfrac{u^3-9u^2+27u-27}{8} \\
+	t^4 & \rightarrow \dfrac{u^4-12u^3+54u^2-108u+81}{16} \\
+	(t+1)^2(3t^4-4t^3-2t^2+56t+60) & \rightarrow \left(\dfrac{u^2-2u+1}{4}\right)\left(\dfrac{3}{16}u^4-\dfrac{11}{4}u^3+\dfrac{113}{8}u^2-\dfrac{11}{4}u+\dfrac{3}{16}\right) \\
+	& =\dfrac{3}{64}u^6-\dfrac{25}{32}u^5+\dfrac{317}{64}u^4-\dfrac{135}{16}u^3+\dfrac{317}{64}u^2-\dfrac{25}{32}u+\dfrac{3}{64}
+	\end{array}
+$$
+
+The final integral is:
+
+$$
+\begin{array}{rl}
+& \displaystyle\int_{2\sqrt{2}+3}^{1}\left(\dfrac{3}{64}u^2-\dfrac{25}{32}u+\dfrac{317}{64}-\dfrac{135}{16}u^{-1}+\dfrac{317}{64}u^{-2}-\dfrac{25}{32}u^{-3}+\dfrac{3}{64}u^{-4}\right)du \\
+& =\left[\dfrac{u^3}{64}-\dfrac{25}{64}u^2+\dfrac{317}{64}u-\dfrac{135}{16}\ln{u}-\dfrac{317}{64}u^{-1}+\dfrac{25}{64}u^{-2}-\dfrac{u^{-3}}{64}\right]_{2\sqrt{2}+3}^{1} \\
+& \simeq 14.873-17.854=-2.981
+\end{array}
+$$
+
+The result is confirmed by [WolframAlpha](http://www.wolframalpha.com/input/?i=%5Cint_0%5E1+%5Cfrac%7B3x%5E3+-+x%5E2+%2B+2x+-+4%7D%7B%5Csqrt%7Bx%5E2+-+3x+%2B+2%7D%7D+dx)
+
+It does not look a PIN code at all unless we interpret the PIN as 2981. Anyway, it was fun and I hope it was a good refresh of the basic rules of integration of rational integrals.
