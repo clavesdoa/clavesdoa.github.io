@@ -125,3 +125,5 @@ $$
 The result is confirmed by [WolframAlpha](http://www.wolframalpha.com/input/?i=%5Cint_0%5E1+%5Cfrac%7B3x%5E3+-+x%5E2+%2B+2x+-+4%7D%7B%5Csqrt%7Bx%5E2+-+3x+%2B+2%7D%7D+dx)
 
 It does not look a PIN code at all unless we interpret the PIN as 2981. Anyway, it was fun and I hope it was a good refresh of the basic rules of integration of rational integrals.
+
+{% include share-bar.html %}
