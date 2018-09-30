@@ -38,7 +38,7 @@ This is as far as we can go since the quadratic term does not have real roots. W
 
 $$x^2-3x+2=(x-1)(x-2)$$
 
-Given the form of the integrand we can use [Euler substitution](https://en.wikipedia.org/wiki/Euler_substitution):
+Given the form of the integrand we can use [Euler substitution](https://en.wikipedia.org/wiki/Euler_substitution){:target="_blank"}:
 
 $$\sqrt{x^2-3x+2}=x+t$$
 
@@ -89,7 +89,7 @@ $$
 \end{array}
 $$
 
-We need another substitution:
+Now we need another substitution:
 
 $$
 	\begin{array}{rl}
@@ -122,7 +122,7 @@ $$
 \end{array}
 $$
 
-The result is confirmed by [WolframAlpha](http://www.wolframalpha.com/input/?i=%5Cint_0%5E1+%5Cfrac%7B3x%5E3+-+x%5E2+%2B+2x+-+4%7D%7B%5Csqrt%7Bx%5E2+-+3x+%2B+2%7D%7D+dx)
+The result is confirmed by [WolframAlpha](http://www.wolframalpha.com/input/?i=%5Cint_0%5E1+%5Cfrac%7B3x%5E3+-+x%5E2+%2B+2x+-+4%7D%7B%5Csqrt%7Bx%5E2+-+3x+%2B+2%7D%7D+dx){:target="_blank"}
 
 It does not look a PIN code at all unless we interpret the PIN as 2981. Anyway, it was fun and I hope it was a good refresh of the basic rules of integration of rational integrals.
 
