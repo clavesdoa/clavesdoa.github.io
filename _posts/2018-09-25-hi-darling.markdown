@@ -117,8 +117,8 @@ The final integral is:
 $$
 \begin{array}{rl}
 & \displaystyle\int_{2\sqrt{2}+3}^{1}\left(\dfrac{3}{64}u^2-\dfrac{25}{32}u+\dfrac{317}{64}-\dfrac{135}{16}u^{-1}+\dfrac{317}{64}u^{-2}-\dfrac{25}{32}u^{-3}+\dfrac{3}{64}u^{-4}\right)du \\
-& =\left[\dfrac{u^3}{64}-\dfrac{25}{64}u^2+\dfrac{317}{64}u-\dfrac{135}{16}\ln{u}-\dfrac{317}{64}u^{-1}+\dfrac{25}{64}u^{-2}-\dfrac{u^{-3}}{64}\right]_{2\sqrt{2}+3}^{1} \\
-& \simeq 14.873-17.854=-2.981
+& =\left[\dfrac{u^3}{64}-\dfrac{25}{64}u^2+\dfrac{317}{64}u-\dfrac{135}{16}\ln{(u)}-\dfrac{317}{64}u^{-1}+\dfrac{25}{64}u^{-2}-\dfrac{u^{-3}}{64}\right]_{2\sqrt{2}+3}^{1} \\
+& \simeq \dfrac{135}{16}\ln{(2\sqrt{2}+3)}-17.854 = 14.873-17.854=-2.981
 \end{array}
 $$
 
